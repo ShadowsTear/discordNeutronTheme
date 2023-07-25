@@ -1,0 +1,407 @@
+/** AGENT_SHEET **/
+ 
+/* root variables (placeholder for now) */
+ 
+:root {
+    --scrollbar-auto-track: transparent !important;
+    --background-modifier-hover: var(--background-secondary);
+    --font-code: "Iosevka Term Curly Slab Light", monospace;
+    --font-primary: "Segoe UI Variable Display", system, sans-serif;
+    --font-display: "Segoe UI Variable Display", system, sans-serif; 
+}
+ 
+.theme-light {
+    --background-tertiary:  rgba(255,255,255, 0.06) !important;
+    --background-secondary: rgba(255,255,255,0.6);
+    --background-primary: rgba(255,255,255,1);
+    --channeltextarea-background: rgba(255,255,255,0.6);
+    --background-modifier-selected: rgba(255,255,255,0.6);
+    --chat-border: rgb(126, 135, 142);
+}
+ 
+.theme-dark {
+    --background-tertiary:  rgba(29, 29, 29, 0.2) !important;
+    --background-secondary: rgba(29, 29, 29, 0.8);
+    --background-primary: rgba(29, 29, 29, 0.8);
+    --text-muted: rgba(255,255,255,0.6);
+    --channeltextarea-background: rgba(29, 29, 29, 0.8);
+    --background-modifier-selected: rgba(29, 29, 29, 0.8); 
+    --chat-border: rgb(108, 118, 127);
+}
+ 
+/* transparent backgrounds */
+ 
+.app-2CXKsg, .privateChannels-oVe7HL, .sidebar-1tnWFu, .scroller-WSmht3, .nowPlayingColumn-1eCBCN, .container-1oAagU, .standardSidebarView-E9Pc3j, .layer-86YKbF, .itemFilled-1cPbtg, .container-1NXEtd , .theme-light .container-YkUktl{
+    background: transparent !important;
+}
+ 
+.header-3OsQeK {
+    box-shadow: 0 0;
+}
+ 
+.peopleListItem-u6dGxF {
+    border-color: transparent;
+}
+ 
+/* secondary backgrounds */
+ 
+.base-2jDfDU, .role-2TIOKu {
+    background: var(--background-secondary) !important;
+}
+ 
+.content-1jQy2l:before, .searchBar-3TnChZ {
+    box-shadow: 0px 0px !important;
+}
+ 
+.scroller-hE2gWq {
+    border-color: transparent;
+}
+ 
+.tabBody-2dgbAs:before {
+    opacity: 0;
+}
+ 
+.side-1lrxIh .themed-qqoYp3.selected-1sf9UK.item-2GWPIy, .topPill-2vcLsa .themed-qqoYp3.selected-1sf9UK.item-2GWPIy, .modeSelected-3DmyhH .link-1_kTxV, .modeSelected-3DmyhH:hover .link-1_kTxV, .interactiveSelected-29CP8y {
+    background: red !important;
+    background: var(--background-secondary) !important;
+    box-shadow: inset 0 0 2pt 0 var(--chat-border);
+}
+ 
+/* preferences screen sidebar (why are the margins Like That?) */
+    /* actually i guess i kinda get it but it looks silly on its own */
+ 
+.sidebarRegion-1VBisG {
+    flex: 1 0 !important;
+}
+ 
+.sidebarRegionScroller-FXiQOh {
+    padding: 0pt 12pt !important;
+}
+ 
+/* font weights */
+ 
+.username-Qpc78p, .title-338goq {
+    font-weight: 600;
+}
+ 
+.item-3XjbnG, .text-md-medium-2avxhQ, .name-2m3Cms, .name-28HaxV {
+    font-weight: 400 !important;
+}
+ 
+/* font colors */
+ 
+/* rounded elements */
+ 
+.base-2jDfDU, .role-2TIOKu, .tree-3agP2X, .oldTitleBarEnabled-D8ppJQ .wrapper-1_HaEi {
+    background: transparent !important;
+}
+ 
+.content-1SgpWY {
+    background: var(--background-secondary) !important;
+}
+ 
+.chat-2ZfjoI, .container-2cd8Mz, .content-1SgpWY, 
+.base-2jDfDU {
+    border-radius: 8pt 0 0 8pt !important;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.3) !important;
+}
+ 
+/* font sizes, line heights */
+ 
+.container-q97qHp {
+    font-size: 14pt !important;
+    line-height: 20pt !important;
+    margin: 0px !important;
+    padding: 4pt 0pt 4pt 0pt !important;
+}
+ 
+/* more transparent things */
+ 
+.container-ZMc96U.themed-Hp1KC_, .panels-3wFtMD {
+    background: transparent !important;
+}
+ 
+.container-ZMc96U.themed-Hp1KC_, #popout_665 {
+    background-color: var(--background-secondary) !important;
+    backdrop-filter: blur(6px) saturate(160%)!important;
+    border-radius: 8pt 0 0 8pt !important;
+}
+ 
+.chatContent-3KubbW {
+    margin-top: -47px !important;
+}
+ 
+.interactive-1vLZ_I:focus-within, .interactive-1vLZ_I:hover, .side-2ur1Qk .themed-2-lozF.item-3XjbnG:hover:not(.disabled-1nofHP), .topPill-3DJJNV .themed-2-lozF.item-3XjbnG:hover:not(.disabled-1nofHP), .wrapper-NhbLHG:hover .content-1gYQeQ, .modeSelected-3DmyhH .content-1gYQeQ, .modeSelected-3DmyhH:hover .content-1gYQeQ {
+    border-radius: 4pt;
+    box-shadow: 0 0 2pt inset var(--chat-border);
+    background-color: var(--background-primary ) !important;
+}
+ 
+.side-2ur1Qk .item-3XjbnG {
+    border-radius: 4pt;
+    padding-top: 6pt;
+    padding-bottom: 6pt;
+}
+ 
+/* headers */
+ 
+.eyebrow-Ejf06y, .heading-deprecated-12-normal-LCvef_, .mainContent-uDGa6R h3 {
+    font-size: 14pt;
+    text-transform: capitalize;
+    font-weight: 600 !important;
+    margin-bottom: 4pt;
+    margin-top: 4pt;
+    line-height: 16pt;
+}
+ 
+h2, .side-1lrxIh .header-2F5_LB {
+    font-size: 12pt !important;
+}
+ 
+.headerText-1qIDDT {
+    padding: 0 10pt !important;
+    text-transform: capitalize;
+}
+ 
+/* buttons */ 
+ 
+/* div[role=button] {
+    background: transparent !important;
+}
+ 
+/** BETTERDISCORD PLUGINS **/
+ 
+/* message previews */
+ 
+.layerContainer-2v_Sit3 {
+    background: var(--background-primary) !important;
+}
+ 
+#ChannelsPreview {
+    background: var(--background-floating) !important;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.3)
+}
+#ChannelsPreview:before {
+    background: linear-gradient(to bottom, var(--background-floating), transparent) !important;
+    height: 64px !important;
+}
+ 
+#ChannelsPreview-darken {
+    display: none;
+}
+ 
+/** ICONS & GLYPHS **/
+ 
+/* emoji picker */
+ 
+@media (prefers-color-scheme:light) {
+    .sprite-2iCowe {
+        background-image: url('https://i.imgur.com/sA65591.png') !important;
+        opacity: .6;
+    }
+ 
+    button[aria-label="Select emoji"]:hover .sprite-2iCowe {
+        opacity: 1;
+    }
+}
+ 
+@media (prefers-color-scheme:dark) {
+    .sprite-2iCowe {
+        background-image: url('https://i.imgur.com/EKX784M.png') !important;
+        opacity: .8;
+    }
+}
+ 
+/* attempting to normalize the look of the channel select and the friends select button...for funsies 
+ 
+.linkBottom-128lIB, .linkTop-1W1aK6, .link-39sEB3 {
+    height: 32pt !important;
+    margin: 0 !important;
+}
+ 
+.link-1_kTxV {
+    padding: 0 4pt;
+}
+ 
+/** general icon styling **/
+ 
+.iconWrapper-2awDjA svg {
+    opacity: 0;
+}
+ 
+/* not these, though; i don't want to replace these */
+ 
+#app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.chat-2ZfjoI > section > div.children-3xh0VB > div.iconWrapper-2awDjA > svg, #app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.chat-2ZfjoI > section > div.toolbar-3_r2xA > div.icon-1ELUnB.iconWrapper-2awDjA.clickable-ZD7xvu > svg {
+    opacity: 1!important;
+}
+ 
+.iconWrapper-2awDjA::before {
+    font-family: "Segoe Fluent Icons" !important;
+    position: absolute;
+    font-size: 14pt;
+    color: inherit !important;
+    color: inherit !important;
+    width: 24px !important;
+    height: 24px !important;
+    text-align: center;
+    line-height: 19pt;
+    font-weight: bold;
+} 
+ 
+/* notification settings */
+ 
+#app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.chat-2ZfjoI > section > div.toolbar-3_r2xA > div:nth-child(2)::before {
+    content: "";
+}
+ 
+/* pinned */
+ 
+#app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.chat-2ZfjoI > section > div.toolbar-3_r2xA > div:nth-child(3)::before {
+    content: ""
+}
+ 
+/* users */
+ 
+#app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.chat-2ZfjoI > section > div.toolbar-3_r2xA > div:nth-child(4)::before {
+    content: "";
+}
+ 
+/* notes, a betterdiscord plugin iirc */
+ 
+#app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.chat-2ZfjoI > section > div.toolbar-3_r2xA > div:nth-child(5)::before {
+    content: "";
+}
+ 
+/* inbox */
+ 
+#app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.chat-2ZfjoI > section > div.toolbar-3_r2xA > div.recentsIcon-F3eO1o > div::before {
+    content: ""
+}
+ 
+/* help */
+ 
+#app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.chat-2ZfjoI > section > div.toolbar-3_r2xA > a > div::before {
+    content: "";
+}
+ 
+/* refresh */
+ 
+#app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.chat-2ZfjoI > section > div.toolbar-3_r2xA > div.toolbar-hRzFw- > div:nth-child(2)::before {
+    content: ""
+}
+ 
+/* minimize */
+ 
+#app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.chat-2ZfjoI > section > div.toolbar-3_r2xA > div.toolbar-hRzFw- > div:nth-child(4)::before {
+    content: "";
+    font-size: 10pt !important;
+}
+ 
+/* maximize */
+ 
+#app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.chat-2ZfjoI > section > div.toolbar-3_r2xA > div.toolbar-hRzFw- > div:nth-child(5)::before {
+    content: "";
+    font-size: 10pt !important;
+}
+ 
+/* close */
+ 
+#app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.chat-2ZfjoI > section > div.toolbar-3_r2xA > div.toolbar-hRzFw- > div:nth-child(6)::before {
+    content: "";
+    font-size: 10pt !important;
+}
+ 
+/* animations on icons, perhaps? */
+ 
+button, .button-2fCJ0o, a div[aria-label="Text"], a div[aria-label="Text (Age-Restricted)"], a div[aria-label="Voice"], a div[aria-label="Text (Limited)"], .iconWrapper-2awDjA {
+    color: var(--text-muted) !important;
+    transform: scale(.8);
+    transition: all .08s;
+}
+ 
+ 
+.lookFilled-1H2Jvj.colorBrand-2M3O3N, .bd-button {
+    color: white !important;
+    background-color: var(--brand-experiment);
+    font-size: 14pt !important;
+    line-height: 16pt !important;
+    padding: 8pt !important;
+    height: auto !important;
+    border-radius: 4pt !important;
+}
+ 
+.textBadge-1fdDPJ {
+    background-color: var(--brand-experiment) !important;
+    border-radius: 4pt !important;
+    color: white !important;
+    font-size: 8pt !important;
+    line-height: 10pt !important;
+}
+ 
+#accessibility-tab > div > div.children-2C96Ex > div:nth-child(13) > div.ttsPreviewWrapper-1d5bI6 > button {
+    color: white !important;
+}
+ 
+div button.lookFilled-1H27vj {
+    color: var(--white-500) !important;
+}
+ 
+button:hover, .button-2fCJ0o:hover, a:hover div[aria-label="Text"], a:hover div[aria-label="Text (Age-Restricted)"], a:hover div[aria-label="Voice"], a:hover div[aria-label="Text (Limited)"], .iconWrapper-2awDjA:hover {
+    color: var(--text-normal) !important;
+    transform: scale(1);
+    transition: all .1s;
+}
+ 
+/* button styling */
+ 
+button:before, a[aria-label$="(voice channel)"]:before, .button-2fCJ0o:before, a div[aria-label="Text"]:before, a div[aria-label="Text (Age-Restricted)"]:before, a div[aria-label="Voice"]:before, a div[role="button"]:before {
+    font-family: "Segoe Fluent Icons" !important;
+    position: absolute;
+    font-size: 16pt;
+    color: inherit !important;
+ 
+}
+ 
+/* so convoluted lol */
+ 
+.buttonWrapper-3YFQGJ svg, button[aria-label="Upload a file or send invites"] div, div[aria-label="Voice"] svg {
+    opacity: 0
+}
+ 
+button[aria-label="Upload a file or send invites"]:before {
+    content: "\E1A5";
+    padding-left: 3pt;
+}
+ 
+button[aria-label$="gift"]:before {
+    content: ""; /* placeholder */
+}
+ 
+button[aria-label="Open GIF picker"]:before {
+    content: "";
+    
+} /* we shall see about this one */
+ 
+button[aria-label="Open sticker picker"]:before {
+    content: "\E81E";
+}
+ 
+/* idr where these came from but i hate them and i'm too lazy to find the plugin that caused them */
+ 
+#app-mount > div.appDevToolsWrapper-1QxdQf > div > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div.container-1eFtFS > div > div > div.chat-2ZfjoI > div.content-1jQy2l > main > form > div > div > div > div.buttons-uaqb-5 > div:nth-child(5),
+#app-mount > div.appDevToolsWrapper-1QxdQf > div > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div.container-1eFtFS > div > div > div.chat-2ZfjoI > div.content-1jQy2l > main > form > div > div > div > div.buttons-uaqb-5 > div:nth-child(6),
+#app-mount > div.appDevToolsWrapper-1QxdQf > div > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div.container-1eFtFS > div > div > div.chat-2ZfjoI > div.content-1jQy2l > main > form > div > div > div > div.buttons-uaqb-5 > div:nth-child(7)   {
+    display: none;
+}
+ 
+/* ...moving on */
+ 
+/* channel selection */
+ 
+div[aria-label="Voice"]:before {
+    content: "\E994";
+}
+ 
+div[aria-label="Create Invite"]:before {
+    content: 
+}
